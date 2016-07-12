@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/assets/styles/ionicons.min.css')
+    link(rel='stylesheet', href='/assets/styles/app.min.css')
+    include ../../highlight.pug
+    title= pageTitle
+  body
+    include ../../header.pug
+    div(class='container')
+      div(class='columns mtop80 mbottom40')
+        div(class='column is-3')
+          include ./nav
+        div(class='column is-9')
+          div(class='content')
+            h1(class='title') Progress
+            h5(class='subtitle') Defines different styles for progress bars.
+            h2(class='title') Usage
+            p.
+              The progress bar consists of a background bar and the progress bar itself, indicating the increase.
+            h3(class='title bleft') Example
+            div(class='colors')
+              span(class='color')
+              span(class='color is-red')
+              span(class='color is-pink')
+              span(class='color is-purple')
+              span(class='color is-deep-purple')
+              span(class='color is-indigo')
+              span(class='color is-blue')
+              span(class='color is-light-blue')
+              span(class='color is-cyan')
+              span(class='color is-teal')
+              span(class='color is-green')
+              span(class='color is-light-green')
+              span(class='color is-lime')
+              span(class='color is-yellow')
+              span(class='color is-amber')
+              span(class='color is-orange')
+              span(class='color is-deep-orange')
+              span(class='color is-brown')
+              span(class='color is-blue-grey')
+              span(class='color is-grey')
+            div(class='mbottom20')
+              button(class='button start-progress') Start Progress
+              button(class='button stop-progress is-hidden') Stop Progress
+              button(class='button striped-progress is-active') is-striped
+              button(class='button active-progress is-active') is-active
+            div(class='progress-container')
+              progress(class='progress is-small is-striped is-active', value='0', max='100')
+              progress(class='progress is-striped is-active', value='0', max='100')
+              progress(class='progress is-medium is-striped is-active', value='0', max='100')
+              progress(class='progress is-large is-striped is-active', value='0', max='100')
+            h3(class='title bleft') Markup
+            pre
+              code(class='language-html')
+    include ../../footer.pug
+
+    script(src='/assets/scripts/dist/progress.min.js')
+    

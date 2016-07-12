@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/assets/styles/ionicons.min.css')
+    link(rel='stylesheet', href='/assets/styles/app.min.css')
+    title= pageTitle
+  body
+    include ../../header.pug
+    div(class='container layout-container')
+      div(class='columns mtop40 mbottom40')
+        div(class='column has-text-centered')
+          div(class='content')
+            h1 Layout
+      div(class='columns')
+        div(class='column is-4 is-offset-2')
+          a(href='/docs/layout/cover')
+            div(class='alert alert-danger is-large') 
+              h1 Cover
+              p An imposing cover to showcase something
+        div(class='column is-4')
+          a(href='/docs/layout/container')
+            div(class='alert alert-success is-large') 
+              h1 Container
+              p A simple container to center your content horizontally
+      div(class='columns')
+        div(class='column is-4 is-offset-2')
+          a(href='/docs/layout/header')
+            div(class='alert is-large') 
+              h1(class='title') Header
+              p A simple responsive header
+        div(class='column is-4')
+          a(href='/docs/layout/footer')
+            div(class='alert alert-warning is-large') 
+              h1 Footer
+              p A simple responsive footer
+
+    include ../../footer.pug
+    

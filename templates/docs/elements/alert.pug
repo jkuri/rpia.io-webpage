@@ -1,0 +1,76 @@
+doctype html
+html(lang="en")
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/assets/styles/ionicons.min.css')
+    link(rel='stylesheet', href='/assets/styles/app.min.css')
+    include ../../highlight.pug
+    title= pageTitle
+  body
+    include ../../header.pug
+    div(class='container')
+      div(class='columns mtop80 mbottom40')
+        div(class='column is-3')
+          include ./nav
+        div(class='column is-9')
+          div(class='content')
+            h1(class='title') Alert
+            h5(class='subtitle') Defines styles for success, warning and error messages.
+            h2(class='title') Usage
+            p.
+              To apply this component, add the <code>.alert</code> class to a block element.
+            h3(class='title bleft') Examples
+            div(class='alert') Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+            div(class='alert alert-success') Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+            div(class='alert alert-danger') Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+            div(class='alert alert-warning') Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+            h3(class='title bleft') Markup
+            div
+              pre
+                code(class='language-html').
+                  &lt;div class='alert'&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                  &lt;div&gt;
+
+                  &lt;div class='alert alert-success'&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                  &lt;div&gt;
+
+                  &lt;div class='alert alert-danger'&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                  &lt;div&gt;
+                  
+                  &lt;div class='alert alert-warning'&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                  &lt;div&gt;
+            h3(class='title bleft') Large Examples
+            p.
+              Add the <code>.alert-large</code> class to increase the spacing in an alert box. This can be useful if you want to use richer typography.
+            div(class='alert alert-large') Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+            div(class='alert alert-success alert-large') Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+            div(class='alert alert-danger alert-large') Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+            div(class='alert alert-warning alert-large') Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+            h3(class='title bleft') Markup
+            div
+              pre
+                code(class='language-html').
+                  &lt;div class='alert alert-large'&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                  &lt;div&gt;
+
+                  &lt;div class='alert alert-success alert-large'&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                  &lt;div&gt;
+
+                  &lt;div class='alert alert-danger alert-large'&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                  &lt;div&gt;
+
+                  &lt;div class='alert alert-warning alert-large'&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                  &lt;div&gt;
+
+    include ../../footer.pug
+
+    | <script>hljs.initHighlightingOnLoad();</script>
+    

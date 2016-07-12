@@ -1,0 +1,123 @@
+doctype html
+html(lang="en")
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/assets/styles/ionicons.min.css')
+    link(rel='stylesheet', href='/assets/styles/app.min.css')
+    include ../../highlight.pug
+    title= pageTitle
+  body
+    include ../../header.pug
+    div(class='container')
+      div(class='content mtop80 mbottom40')
+        h1(class='title') Grid
+
+        h3(class='title bleft') Responsive grid
+        p.
+          Create responsive grid as simple as adding any <code>.column</code> blocks you want into <code>.columns</code> wrapper.
+        button(class='button add-column') Add column
+        button(class='button remove-column') Remove column
+        hr
+        div(class='code-first-case has-text-centered')
+          div(class='columns')
+            div(class='column')
+              div(class='alert alert-danger') 
+                p Hello!
+            div(class='column')
+              div(class='alert alert-success') 
+                p Zdravo!
+            div(class='column')
+              div(class='alert') 
+                p Salut!
+            div(class='column')
+              div(class='alert alert-warning')
+                p Holla!
+
+        h3(class='title bleft') Markup
+        pre
+          code(class='language-html markup-first-case mbottom20')
+
+        h3(class='title bleft') Sizes
+        p.
+          Set the size of a column by adding one of the following classes: <code>is-three-quarters</code> <code>is-two-thirds</code> <code>is-half</code> <code>is-one-third</code> <code>is-one-quarter</code>. 
+        p The remaining space will be filled up automatically.
+        button(class='button size-button is-three-quarters is-active') .is-three-quarters
+        button(class='button size-button is-two-thirds') .is-two-thirds
+        button(class='button size-button is-half') .is-half
+        button(class='button size-button is-one-third') .is-one-third
+        button(class='button size-button is-one-quarter') .is-one-quarter
+        hr
+        div(class='code-second-case has-text-centered')
+          div(class='columns')
+            div(class='column is-one-quarter')
+              p(class='alert alert-success') .is-one-quarter
+            div(class='column')
+              p(class='alert alert-danger') Auto
+        pre
+          code(class='language-html markup-second-case mbottom20')
+
+        h3(class='title bleft') Columns
+        p Grid is divided into 12 columns, each modifier class is named after how many columns you want out of 12.
+        p. 
+          Available classes are: <code>.is-2</code> <code>.is-3</code> <code>.is-4</code> <code>.is-5</code> <code>.is-6</code> <code>.is-7</code> <code>.is-8</code> <code>.is-9</code> <code>.is-10</code> <code>.is-11</code>
+        button(class='button column-button is-2') .is-2
+        button(class='button column-button is-3') .is-3
+        button(class='button column-button is-4') .is-4
+        button(class='button column-button is-5') .is-5
+        button(class='button column-button is-6') .is-6
+        button(class='button column-button is-7') .is-7
+        button(class='button column-button is-8') .is-8
+        button(class='button column-button is-9') .is-9
+        button(class='button column-button is-10') .is-10
+        button(class='button column-button is-11 is-active') .is-11
+        hr
+        div(class='code-third-case has-text-centered')
+          div(class='columns')
+            div(class='column is-11')
+              p(class='alert alert-success') .is-11
+            div(class='column')
+              p(class='alert alert-danger') Auto
+        h3(class='title bleft') Markup
+        pre
+          code(class='language-html markup-third-case mbottom20')
+
+        h3(class='title bleft') Offset
+        p Offset is used to create horizontal space around <code>.column</code> elements. 
+        p Offset classes: <code>.is-offset-1</code> <code>.is-offset-2</code> <code>.is-offset-3</code> <code>.is-offset-4</code> <code>.is-offset-5</code> <code>.is-offset-6</code> <code>.is-offset-7</code> <code>.is-offset-8</code> <code>.is-offset-9</code> <code>.is-offset-10</code> <code>.is-offset-11</code>
+        div(class='mbottom10')
+          button(class='button offset-column-button is-2') .is-2
+          button(class='button offset-column-button is-3') .is-3
+          button(class='button offset-column-button is-4') .is-4
+          button(class='button offset-column-button is-5') .is-5
+          button(class='button offset-column-button is-6 is-active') .is-6
+          button(class='button offset-column-button is-7') .is-7
+          button(class='button offset-column-button is-8') .is-8
+          button(class='button offset-column-button is-9') .is-9
+          button(class='button offset-column-button is-10') .is-10
+          button(class='button offset-column-button is-11') .is-11
+        div
+          button(class='button offset-button is-offset-1') .is-offset-1
+          button(class='button offset-button is-offset-2') .is-offset-2
+          button(class='button offset-button is-offset-3 is-active') .is-offset-3
+          button(class='button offset-button is-offset-4') .is-offset-4
+          button(class='button offset-button is-offset-5') .is-offset-5
+          button(class='button offset-button is-offset-6') .is-offset-6
+          button(class='button offset-button is-offset-7') .is-offset-7
+          button(class='button offset-button is-offset-8') .is-offset-8
+          button(class='button offset-button is-offset-9') .is-offset-9
+          button(class='button offset-button is-offset-10') .is-offset-10
+        hr
+        div(class='code-fourth-case has-text-centered')
+          div(class='columns')
+            div(class='column is-6 is-offset-3')
+              div(class='alert alert-success') 
+                p .is-11
+                p .is-offset-1
+        h3(class='title bleft') Markup
+        pre
+          code(class='language-html markup-fourth-case mbottom20')
+
+    script(src='/assets/scripts/dist/tidy.js')
+    script(src='/assets/scripts/dist/columns.min.js')
+    include ../../footer.pug
+    

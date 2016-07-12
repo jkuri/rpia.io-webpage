@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/assets/styles/ionicons.min.css')
+    link(rel='stylesheet', href='/assets/styles/app.min.css')
+    include ../../highlight.pug
+    title= pageTitle
+  body
+    include ../../header.pug
+    div(class='container')
+      div(class='columns mtop80 mbottom40')
+        div(class='column is-3')
+          include ./nav
+        div(class='column is-9')
+          div(class='content')
+            h1(class='title') Close
+            h5(class='subtitle') Defines styles for a close button that can be combined with different components.
+            h2(class='title') Usage
+            p.
+              To apply this component, add the <code>.close</code> class to an <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> element.
+            h3(class='title bleft') Example
+            div(class='mtop10')
+              a(class='close is-small')
+            div(class='mtop10')
+              a(class='close')
+            div(class='mtop10')
+              a(class='close is-medium')
+            div(class='mtop10')
+              a(class='close is-large')
+            h3(class='title bleft') Markup
+            div
+              pre
+                code(class='language-html').
+                  &lt;a class='close is-small'&gt;&lt;a&gt;
+                  &lt;a class='close'&gt;&lt;a&gt;
+                  &lt;a class='close is-medium'&gt;&lt;a&gt;
+                  &lt;a class='close is-large'&gt;&lt;a&gt;
+
+    include ../../footer.pug
+
+    | <script>hljs.initHighlightingOnLoad();</script>
+    

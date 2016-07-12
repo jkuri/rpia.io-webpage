@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/assets/styles/ionicons.min.css')
+    link(rel='stylesheet', href='/assets/styles/app.min.css')
+    include ../../highlight.pug
+    title= pageTitle
+  body
+    include ../../header.pug
+    div(class='container')
+      div(class='columns mtop80 mbottom40')
+        div(class='column is-3')
+          include ./nav
+        div(class='column is-9')
+          div(class='content')
+            h1(class='title') Box
+            h5(class='subtitle') Easily create nicely looking buttons, which come in different styles.
+            h2(class='title') Usage
+            p.
+              To apply this component, add the .button class to an a or button element. Now you have created a button. Add the disabled attribute to a button element to disable the button.
+            h3(class='title bleft') Example
+            div(class='box mtop20')
+              h4(class='subtitle') Demonstration Box
+              p Lorem ipsum ...
+            h3(class='title bleft') Markup
+            div
+              pre
+                code(class='language-html').
+                  &lt;div class='box'&gt; 
+                    &lt;h4 class='subtitle'&gt;Demonstration Box&lt;/h4&gt; 
+                    &lt;p&gt;Lorem ipsum ...&lt;/p&gt; 
+                  &lt;/div&gt;
+    include ../../footer.pug
+
+    | <script>hljs.initHighlightingOnLoad();</script>
+    

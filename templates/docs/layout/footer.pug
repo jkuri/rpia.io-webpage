@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/assets/styles/ionicons.min.css')
+    link(rel='stylesheet', href='/assets/styles/app.min.css')
+    include ../../highlight.pug
+    title= pageTitle
+  body
+    include ../../header.pug
+    div(class='container')
+      div(class='content mtop80 mbottom40')
+        h1 Footer
+        p A simple responsive footer which can contain anything.
+        h3(class='title bleft') Example
+        div(class='colors')
+          span(class='color')
+          span(class='color is-red')
+          span(class='color is-pink')
+          span(class='color is-purple')
+          span(class='color is-deep-purple')
+          span(class='color is-indigo')
+          span(class='color is-blue')
+          span(class='color is-light-blue')
+          span(class='color is-cyan')
+          span(class='color is-teal')
+          span(class='color is-green')
+          span(class='color is-light-green')
+          span(class='color is-lime')
+          span(class='color is-yellow')
+          span(class='color is-amber')
+          span(class='color is-orange')
+          span(class='color is-deep-orange')
+          span(class='color is-brown')
+          span(class='color is-blue-grey')
+          span(class='color is-grey')
+        hr
+        div(class='demo')
+          footer(class='footer is-green')
+            div(class='container')
+              div(class='content has-text-centered')
+                p
+                  span(class='icon is-huge')
+                    i(class='ion-social-angular-outline')
+                p
+                  a(href='https://angular.io') https://angular.io
+        h3(class='title bleft') Markup
+        pre
+          code(class='language-html demo-code mbottom60')
+
+    include ../../footer.pug
+    script(src='/assets/scripts/dist/tidy.js')
+    script(src='/assets/scripts/dist/footer.min.js')
+    

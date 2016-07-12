@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/assets/styles/ionicons.min.css')
+    link(rel='stylesheet', href='/assets/styles/app.min.css')
+    include ../../highlight.pug
+    title= pageTitle
+  body
+    include ../../header.pug
+    div(class='container')
+      div(class='columns mtop80 mbottom40')
+        div(class='column is-3')
+          include ./nav.pug
+        div(class='column is-9')
+          div(class='content')
+            h1(class='title') File Structure
+            p.
+              Nevertheless which method you used to download or install <code>rpia.io</code> in the previous step, all of them comes with the <code>source</code> <code>SASS</code> code, compiled <code>CSS</code> and the <code>minified CSS</code> stylings with related sourcemaps included.
+            pre
+              code(class='code-file-structure').
+                <strong>/css</strong>
+                  rpia.css
+                  rpia.css.map
+                  rpia.min.css
+                  rpia.min.css.map
+                <strong>/sass</strong>
+                  <strong>/base</strong>
+                    base.sass
+                    classes.sass
+                    generic.sass
+                    helpers.sass
+                  <strong>/components</strong>
+                    components.sass
+                    <a href='/docs/components/grid'>grid.sass</a>
+                    <a href='/docs/components/nav'>nav.sass</a>
+                    <a href='/docs/components/navbar'>navbar.sass</a>
+                  <strong>/elements</strong>
+                    <a href='/docs/elements/alert'>alert.sass</a>
+                    <a href='/docs/elements/box'>box.sass</a>
+                    <a href='/docs/elements/button'>button.sass</a>
+                    <a href='/docs/elements/close'>close.sass</a>
+                    <a href='/docs/elements/content'>content.sass</a>
+                    elements.sass
+                    <a href='/docs/elements/form'>alert.sass</a>
+                    <a href='/docs/elements/icon'>icon.sass</a>
+                    <a href='/docs/elements/image'>image.sass</a>
+                    <a href='/docs/elements/progress'>progress.sass</a>
+                  <strong>/layout</strong>
+                  <strong>/utilities</strong>
+                rpia.sass
+
+    include ../../footer.pug
+
+    | <script>hljs.initHighlightingOnLoad();</script>

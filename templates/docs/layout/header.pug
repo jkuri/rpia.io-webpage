@@ -1,0 +1,66 @@
+doctype html
+html(lang="en")
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/assets/styles/ionicons.min.css')
+    link(rel='stylesheet', href='/assets/styles/app.min.css')
+    include ../../highlight.pug
+    title= pageTitle
+  body
+    include ../../header.pug
+    div(class='container')
+      div(class='content mtop20 mbottom40')
+        h1 Header
+        p A simple responsive header
+        h3(class='title bleft') Usage
+        p <code>.header</code> is simple responsive container which sticks on top of the webpage. 
+        p Usually header also contains some navigation links or at least a logo.
+        h3(class='title bleft') Example
+        div(class='colors')
+          span(class='color')
+          span(class='color is-red')
+          span(class='color is-pink')
+          span(class='color is-purple')
+          span(class='color is-deep-purple')
+          span(class='color is-indigo')
+          span(class='color is-blue')
+          span(class='color is-light-blue')
+          span(class='color is-cyan')
+          span(class='color is-teal')
+          span(class='color is-green')
+          span(class='color is-light-green')
+          span(class='color is-lime')
+          span(class='color is-yellow')
+          span(class='color is-amber')
+          span(class='color is-orange')
+          span(class='color is-deep-orange')
+          span(class='color is-brown')
+          span(class='color is-blue-grey')
+          span(class='color is-grey')
+        hr
+        div(class='demo')
+          header(class='header has-shadow is-green')
+            div(class='header-item')
+              a(class='icon is-medium', href='/docs/layout/header')
+                i(class='ion-social-angular-outline is-medium')
+            div(class='header-item') 
+              a(class='is-active', href='/docs/layout/header') Home
+            div(class='header-item') 
+              a(href='/docs/layout/header') Get Started
+            div(class='header-item')
+              a(href='/docs/layout/header') Grid
+            div(class='header-item')
+              a(href='/docs/layout/header') Elements
+            div(class='header-item')
+              a(href='/docs/layout/header') Components
+            div(class='header-item')
+              a(href='/docs/layout/header') Layout
+            
+        h3(class='title bleft') Markup
+        pre
+          code(class='language-html demo-code mbottom60')
+
+    include ../../footer.pug
+    script(src='/assets/scripts/dist/tidy.js')
+    script(src='/assets/scripts/dist/header.min.js')
+    

@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/assets/styles/ionicons.min.css')
+    link(rel='stylesheet', href='/assets/styles/app.min.css')
+    include ../../highlight.pug
+    title= pageTitle
+  body
+    include ../../header.pug
+    div(class='container')
+      div(class='content mtop20 mbottom40')
+        h1 Container
+        p A simple container to center your content horizontally.
+        h3(class='title bleft') Usage
+        p <code>.container</code> class can be used in any context, but mostly as a direct child of <code>.header</code>, <code>.footer</code>, <code>.section</code> or <code>.cover</code>.
+        div(class='alert alert-success')
+          p On mobile and tablet, the container will have a margin of 20px on both the left and right sides.
+        div(class='alert alert-success')
+          p On desktop (> 980px), the container will have a maximum width of 960px and will be horizontally centered.
+        h3(class='title bleft') Example
+        div
+          button(class='button fluid-button') is-fluid
+        div(class='demo demo-container')
+          div(class='container')
+            h1(class='title') Container
+            h5(class='subtitle') A simple container to center your content horizontally.
+            h2(class='title') Lorem ipsum
+            p.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu quam sit amet ligula varius faucibus. Sed lorem nunc, gravida ac felis id, ornare hendrerit felis. Pellentesque iaculis sollicitudin luctus. Nullam suscipit ultricies ligula sit amet efficitur. Vivamus vestibulum, quam non semper molestie, ante augue lacinia lectus, nec tempor nulla purus ut metus. Praesent sit amet dapibus ante, vitae convallis risus. Integer pellentesque urna vitae gravida congue.
+            
+        h3(class='title bleft') Markup
+        pre
+          code(class='language-html demo-code mbottom60')
+
+    include ../../footer.pug
+    script(src='/assets/scripts/dist/tidy.js')
+    script(src='/assets/scripts/dist/container.min.js')
+    

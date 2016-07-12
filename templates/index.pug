@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/assets/styles/ionicons.min.css')
+    link(rel='stylesheet', href='/assets/styles/app.min.css')
+    title= pageTitle
+  body
+    section(class='cover is-fullheight')
+      div(class='cover-head')
+        include ./header.pug
+      div(class='cover-body')
+        div(class='container')
+          div(class='columns')
+            div(class='column is-4 is-offset-4 has-text-centered')
+              figure(class='image logo')
+                img(src='/assets/images/rpia.png')
+              div(class='content is-medium mtop20')
+                p A modern CSS front-end framework for developing powerful web interfaces.
+                a(class='button is-large mtop20', href='/docs/start/installation') Documentation
+      div(class='cover-foot')
+        include ./footer.pug
+
+    script(src='/assets/scripts/dist/index.min.js')

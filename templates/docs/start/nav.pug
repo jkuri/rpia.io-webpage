@@ -1,0 +1,22 @@
+ul(class='nav is-sidenav br-light')
+  li(class='nav-item nav-heading') GET STARTED
+  if file === 'installation'
+    li(class='nav-item is-active')
+      a(href='/docs/start/installation') Installation
+  else
+    li(class='nav-item')
+      a(href='/docs/start/installation') Installation
+
+  if file === 'include'
+    li(class='nav-item is-active')
+      a(href='/docs/start/include') Include
+  else
+    li(class='nav-item')
+      a(href='/docs/start/include') Include
+
+  if file === 'file_structure'
+    li(class='nav-item is-active')
+      a(href='/docs/start/file_structure') File Structure
+  else
+    li(class='nav-item')
+      a(href='/docs/start/file_structure') File Structure

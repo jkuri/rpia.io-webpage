@@ -1,0 +1,65 @@
+doctype html
+html(lang="en")
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/assets/styles/ionicons.min.css')
+    link(rel='stylesheet', href='/assets/styles/app.min.css')
+    include ../../highlight.pug
+    title= pageTitle
+  body
+    include ../../header.pug
+    div(class='container')
+      div(class='columns mtop80 mbottom40')
+        div(class='column is-3')
+          include ./nav.pug
+        div(class='column is-9')
+          div(class='content')
+            h1(class='title') Include
+            h4(class='title bleft') Include rpia.io into you web application
+            p.
+              <code>rpia.io</code> is compiled and concatenated into single <code>.css</code> file which should be included into your web application to make things work.
+            h4(class='subtitle') Sample HTML
+            div(class='alert')
+              p Path of <code>rpia.min.css</code> can variate, depends on which step you took to install or download the source code.
+            pre(class='mbottom20')
+              code(class='language-html').
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;My Web Application&lt;/title&gt;
+                        &lt;link rel="stylesheet" href='rpia.min.css' /&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            div(class='alert alert-success')
+              p If you used <code>npm</code> the path should be <code>/node_modules/rpia/css/rpia.min.css</code>
+              p If you used <code>bower</code> the path should be <code>/bower_components/rpia/css/rpia.min.css</code>
+            h4(class='title bleft') Test things are included properly
+            p To make sure that <code>.css</code> file is included properly make a simple test, for example;
+            pre(class='mbottom20')
+              code(class='language-html').
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;My Web Application&lt;/title&gt;
+                        &lt;link rel="stylesheet" href='rpia.min.css' /&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                      &lt;div class='container'&gt;
+                        &lt;div class='content'&gt;
+                          &lt;div class='alert'&gt;
+                            Testing! 
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;div&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            p. 
+              Save above lines to <code>index.html</code>, open file in your favourite browser and you should see a nice alert box.
+            div(class='alert alert-danger').
+              If alert box doesn't show up, please double check your included path to <code>rpia.min.css</code>.
+
+    include ../../footer.pug
+
+    | <script>hljs.initHighlightingOnLoad();</script>

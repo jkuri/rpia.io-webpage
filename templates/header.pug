@@ -1,0 +1,31 @@
+header(class='navbar has-shadow')
+  div(class='container')
+    div(class='nav-center')
+      if dir === 'index'
+        a(class='nav-item is-tab is-green is-active', href='/') Home
+      else
+        a(class='nav-item is-tab is-green', href='/') Home
+      if dir === 'start'
+        a(class='nav-item is-tab is-green is-active', href='/docs/start/installation') Get Started
+      else
+        a(class='nav-item is-tab is-green', href='/docs/start/installation') Get Started
+      if dir === 'grid'
+        a(class='nav-item is-tab is-green is-active', href='/docs/grid/columns') Grid
+      else
+        a(class='nav-item is-tab is-green', href='/docs/grid/columns') Grid
+      if dir === 'elements'
+        a(class='nav-item is-tab is-green is-active', href='/docs/elements/box') Elements
+      else
+        a(class='nav-item is-tab is-green', href='/docs/elements/box') Elements
+      if dir === 'components'
+        a(class='nav-item is-tab is-green is-active', href='/docs/components/card') Components
+      else
+        a(class='nav-item is-tab is-green', href='/docs/components/card') Components
+      if dir === 'layout'
+        a(class='nav-item is-tab is-green is-active', href='/docs/layout/index') Layout
+      else
+        a(class='nav-item is-tab is-green', href='/docs/layout/index') Layout
+      if dir === 'utilities'
+        a(class='nav-item is-tab is-green is-active', href='/docs/utlities/colors') Utilities
+      else
+        a(class='nav-item is-tab is-green', href='/docs/utilities/colors') Utilities

@@ -1,0 +1,14 @@
+ul(class='nav is-sidenav br-light')
+  li(class='nav-item nav-heading') UTLITIES
+  if file === 'colors'
+    li(class='nav-item is-active')
+      a(href='/docs/utilities/colors') Colors
+  else
+    li(class='nav-item')
+      a(href='/docs/utilities/colors') Colors
+  if file === 'animations'
+    li(class='nav-item is-active')
+      a(href='/docs/utilities/animations') Animations
+  else
+    li(class='nav-item')
+      a(href='/docs/utilities/animations') Animations

@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/assets/styles/ionicons.min.css')
+    link(rel='stylesheet', href='/assets/styles/app.min.css')
+    include ../../highlight.pug
+    title= pageTitle
+  body
+    include ../../header.pug
+    div(class='container')
+      div(class='columns mtop80 mbottom40')
+        div(class='column is-3')
+          include ./nav.pug
+        div(class='column is-9')
+          div(class='content')
+            h1(class='title') Installation
+            h3(class='title bleft') Npm
+            p.
+              <code>rpia.io</code> source code is available on <code>npm</code> package manager.
+            pre
+              code(class='language-sh code-install').
+                npm install rpia --save
+            h3(class='title bleft') Bower
+            p.
+              It is also available on <code>bower</code> package manager.
+            pre
+              code(class='language-sh code-install').
+                bower install rpia --save
+            h3(class='title bleft') Source
+            p.
+              Alternatively you can download full source code via <code>GitHub</code>. 
+            a(class='button is-large is-green', href='https://github.com/jkuri/rpia.io/archive/master.zip') Download source code
+            h3(class='title bleft') Got your version?
+            p.
+              Once you successfully installed or downloaded <code>rpia.io</code> you can proceed to 
+              <a href='/docs/start/include'>include</a> howto.
+    include ../../footer.pug
+
+    | <script>hljs.initHighlightingOnLoad();</script>

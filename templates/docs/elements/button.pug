@@ -1,0 +1,102 @@
+doctype html
+html(lang="en")
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/assets/styles/ionicons.min.css')
+    link(rel='stylesheet', href='/assets/styles/app.min.css')
+    link(rel='stylesheet', href='/assets/styles/vs.css')
+    include ../../highlight.pug
+    title= pageTitle
+  body
+    include ../../header.pug
+    div(class='container')
+      div(class='columns mtop80 mbottom40')
+        div(class='column is-3')
+          include ./nav
+        div(class='column is-9')
+          div(class='content')
+            h1(class='title') Button
+            h5(class='subtitle') Easily create nicely looking buttons, which come in different styles.
+            h2(class='title') Usage
+            p.
+              To apply this component, add the .button class to an a or button element. Now you have created a button. Add the disabled attribute to a button element to disable the button.
+            h3(class='title bleft') Example
+            div
+              div(class='colors')
+                span(class='color')
+                span(class='color is-red')
+                span(class='color is-pink')
+                span(class='color is-purple')
+                span(class='color is-deep-purple')
+                span(class='color is-indigo')
+                span(class='color is-blue')
+                span(class='color is-light-blue')
+                span(class='color is-cyan')
+                span(class='color is-teal')
+                span(class='color is-green')
+                span(class='color is-light-green')
+                span(class='color is-lime')
+                span(class='color is-yellow')
+                span(class='color is-amber')
+                span(class='color is-orange')
+                span(class='color is-deep-orange')
+                span(class='color is-brown')
+                span(class='color is-blue-grey')
+                span(class='color is-grey')
+              div
+                a(class='button is-mini') Link
+                button(class='button is-mini') Button
+                button(class='button is-mini' disabled) Disabled
+              div(class='mtop20')
+                a(class='button is-small') Link
+                button(class='button is-small') Button
+                button(class='button is-small' disabled) Disabled
+              div(class='mtop20')
+                a(class='button') Link
+                button(class='button') Button
+                button(class='button' disabled) Disabled
+              div(class='mtop20')
+                a(class='button is-large') Link
+                button(class='button is-large') Button
+                button(class='button is-large' disabled) Disabled
+            h3(class='title bleft') Markup
+            div
+              pre
+                code(class='language-html').
+                  &lt;a class='button is-mini'&gt;Link&lt;/a&gt;
+                  &lt;button class='button is-mini'&gt;Button&lt;/button&gt;
+                  &lt;button class='button is-mini' disabled&gt;Disabled&lt;/button&gt;
+
+                  &lt;a class='button is-small'&gt;Link&lt;/a&gt;
+                  &lt;button class='button is-small'&gt;Button&lt;/button&gt;
+                  &lt;button class='button is-small' disabled&gt;Disabled&lt;/button&gt;
+
+                  &lt;a class='button'&gt;Link&lt;/a&gt;
+                  &lt;button class='button'&gt;Button&lt;/button&gt;
+                  &lt;button class='button' disabled&gt;Disabled&lt;/button&gt;
+
+                  &lt;a class='button is-large'&gt;Link&lt;/a&gt;
+                  &lt;button class='button is-large'&gt;Button&lt;/button&gt;
+                  &lt;button class='button is-large' disabled&gt;Disabled&lt;/button&gt;
+              pre
+                article(class='markup-copy is-hidden').
+                  <a class='button is-mini'>Link</a>
+                  <button class='button is-mini'>Button</button>
+                  <button class='button is-mini' disabled>Disabled</button>
+                  
+                  <a class='button is-small'>Link</a>
+                  <button class='button is-small'>Button</button>
+                  <button class='button is-small' disabled>Disabled</button>
+                  
+                  <a class='button'>Link</a>
+                  <button class='button'>Button</button>
+                  <button class='button' disabled>Disabled</button>
+
+                  <a class='button is-large'>Link</a>
+                  <button class='button is-large'>Button</button>
+                  <button class='button is-large' disabled>Disabled</button>
+    include ../../footer.pug
+
+    script(src='/assets/scripts/dist/button.min.js')
+    | <script>hljs.initHighlightingOnLoad();</script>
+    

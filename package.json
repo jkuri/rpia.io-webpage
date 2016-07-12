@@ -1,0 +1,35 @@
+{
+  "name": "www.rpia.io",
+  "version": "1.0.0",
+  "description": "rpia.io web page",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkuri/jankuri.com.git"
+  },
+  "author": "Jan Kuri <jkuri88@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jkuri/jankuri.com/issues"
+  },
+  "homepage": "https://github.com/jkuri/jankuri.com#readme",
+  "dependencies": {
+    "hapi": "^13.5.0",
+    "inert": "^4.0.1",
+    "pug": "^2.0.0-beta3",
+    "vision": "^4.1.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-hapi": "^0.12.0",
+    "load-grunt-tasks": "^3.5.0",
+    "time-grunt": "^1.3.0"
+  }
+}
