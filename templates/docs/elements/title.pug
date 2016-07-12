@@ -14,11 +14,29 @@ html(lang="en")
           include ./nav
         div(class='column is-9')
           div(class='content')
-            h1(class='title') Title
-            div(class='alert alert-danger')
-              h1 Sorry!
-              p This is not documented or even styled yet.
-                  
+            h1(class='title') Table
+            p Simple headings to add depth to your page.
+            h3(class='title bleft') Example
+            div(class='demo')
+              div(class='content')
+                h1(class='title is-1') Title 1
+                h2(class='title is-2') Title 2
+                h3(class='title is-3') Title 3
+                h4(class='title is-4') Title 4
+                h5(class='title is-5') Title 5
+                h6(class='title is-6') Title 6
+              div(class='content')
+                h1(class='subtitle is-1') Subtitle 1
+                h2(class='subtitle is-2') Subtitle 2
+                h3(class='subtitle is-3') Subtitle 3
+                h4(class='subtitle is-4') Subtitle 4
+                h5(class='subtitle is-5') Subtitle 5
+                h6(class='subtitle is-6') Subtitle 6
+                
+            h3(class='title bleft') Markup
+            pre
+              code(class='language-html demo-code mbottom60')
+
     include ../../footer.pug
-    
-    
+    script(src='/assets/scripts/dist/tidy.js')
+    script(src='/assets/scripts/dist/title.min.js')
