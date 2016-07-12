@@ -96,6 +96,22 @@ module.exports = (grunt) => {
       colors: {
         src: ['assets/scripts/colors.js'],
         dest: 'assets/scripts/dist/colors.js'
+      },
+      table: {
+        src: ['assets/scripts/table.js'],
+        dest: 'assets/scripts/dist/table.js'
+      },
+      tag: {
+        src: ['assets/scripts/tag.js'],
+        dest: 'assets/scripts/dist/tag.js'
+      },
+      image: {
+        src: ['assets/scripts/image.js'],
+        dest: 'assets/scripts/dist/image.js'
+      },
+      title: {
+        src: ['assets/scripts/title.js'],
+        dest: 'assets/scripts/dist/title.js'
       }
     },
     babel: {
@@ -116,7 +132,11 @@ module.exports = (grunt) => {
           'assets/scripts/dist/cover.min.js': 'assets/scripts/dist/cover.js',
           'assets/scripts/dist/container.min.js': 'assets/scripts/dist/container.js',
           'assets/scripts/dist/header.min.js': 'assets/scripts/dist/header.js',
-          'assets/scripts/dist/colors.min.js': 'assets/scripts/dist/colors.js'
+          'assets/scripts/dist/colors.min.js': 'assets/scripts/dist/colors.js',
+          'assets/scripts/dist/table.min.js': 'assets/scripts/dist/table.js',
+          'assets/scripts/dist/tag.min.js': 'assets/scripts/dist/tag.js',
+          'assets/scripts/dist/image.min.js': 'assets/scripts/dist/image.js',
+          'assets/scripts/dist/title.min.js': 'assets/scripts/dist/title.js'
         }
       }
     },

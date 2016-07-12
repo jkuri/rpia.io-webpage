@@ -5,14 +5,14 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jkuri/jankuri.com.git"
+    "url": "git+https://github.com/jkuri/rpia.io-website.git"
   },
   "author": "Jan Kuri <jkuri88@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jkuri/jankuri.com/issues"
+    "url": "https://github.com/jkuri/rpia.io-website/issues"
   },
-  "homepage": "https://github.com/jkuri/jankuri.com#readme",
+  "homepage": "https://github.com/jkuri/rpia.io-website#readme",
   "dependencies": {
     "hapi": "^13.5.0",
     "inert": "^4.0.1",

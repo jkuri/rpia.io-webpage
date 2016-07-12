@@ -15,8 +15,56 @@ html(lang="en")
         div(class='column is-9')
           div(class='content')
             h1(class='title') Table
-            div(class='alert alert-danger')
-              h1 Sorry!
-              p This is not documented or even styled yet.
+            p Easily create nicely looking tables, which come in different styles.
+            h3(class='title bleft') Usage
+            p To apply this component, add the <code>.table</code> class to a <code>&lt;table&gt;</code> element.
+            h3(class='title bleft') Example
+            div
+              button(class='button table-button is-bordered') is-bordered
+              button(class='button table-button is-striped') is-striped
+              button(class='button table-button is-narrow') is-narrow
+            div(class='demo')
+              table(class='table')
+                thead
+                  tr
+                    th Operating System
+                    th Initial Release
+                    th Logo
+                tfoot
+                  tr
+                    th Operating System
+                    th Initial Release
+                    th Logo
+                tbody
+                  tr
+                    td Mac OSX
+                    td 2001
+                    td(class='is-icon')
+                      a(href='http://www.apple.com/osx/')
+                        i(class='ion-social-apple')
+                  tr
+                    td Linux
+                    td 1991
+                    td(class='is-icon')
+                      a(href='http://www.linux.org/')
+                        i(class='ion-social-tux')
+                  tr
+                    td Windows
+                    td 1985
+                    td(class='is-icon')
+                      a(href='https://www.microsoft.com/windows/')
+                        i(class='ion-social-windows')
+                  tr
+                    td FreeBSD
+                    td 1993
+                    td(class='is-icon')
+                      a(href='http://www.freebsd.org/')
+                        i(class='ion-social-freebsd-devil')
+                
+            h3(class='title bleft') Markup
+            pre
+              code(class='language-html demo-code mbottom60')
 
     include ../../footer.pug
+    script(src='/assets/scripts/dist/tidy.js')
+    script(src='/assets/scripts/dist/table.min.js')
