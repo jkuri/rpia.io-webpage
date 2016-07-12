@@ -14,11 +14,44 @@ html(lang="en")
           include ./nav
         div(class='column is-9')
           div(class='content')
-            h1(class='title') Tag
-            div(class='alert alert-danger')
-              h1 Sorry!
-              p This is not documented or even styled yet.
-                  
+            h1(class='title') Table
+            p Small tag labels to insert anywhere.
+            h3(class='title bleft') Usage
+            p To apply this component, add the <code>.tag</code> class to a block element.
+            h3(class='title bleft') Example
+            div(class='colors')
+              span(class='color')
+              span(class='color is-red')
+              span(class='color is-pink')
+              span(class='color is-purple')
+              span(class='color is-deep-purple')
+              span(class='color is-indigo')
+              span(class='color is-blue')
+              span(class='color is-light-blue')
+              span(class='color is-cyan')
+              span(class='color is-teal')
+              span(class='color is-green is-active')
+              span(class='color is-light-green')
+              span(class='color is-lime')
+              span(class='color is-yellow')
+              span(class='color is-amber')
+              span(class='color is-orange')
+              span(class='color is-deep-orange')
+              span(class='color is-brown')
+              span(class='color is-blue-grey')
+              span(class='color is-grey')
+            div
+              button(class='button size-button') is-medium
+              button(class='button size-button') is-large
+            hr
+            div(class='demo')
+              div(class='tag is-green') Lorem ipsum
+                button(class='close')
+                
+            h3(class='title bleft') Markup
+            pre
+              code(class='language-html demo-code mbottom60')
 
     include ../../footer.pug
-    
+    script(src='/assets/scripts/dist/tidy.js')
+    script(src='/assets/scripts/dist/tag.min.js')
